@@ -42,12 +42,13 @@ Template.Home.onRendered(function() {
         console.log("here is what it turns into: ", scores[-1]);
       });
       console.log("Hi Reinhard. You've almost figured your yesterday right thing out.");
+      var graphic_width = window.innerWidth;
       MG.data_graphic({
-        title: "Downloads",
-        description: "This graphic shows a time-series of downloads.",
+        title: project.id,
+        description: "This graphic shows a time-series ofdownloads.",
         data: scores,
-        width: '600',
-        height: 255,
+        width: graphic_width,
+        height: 280,
         target: '#twitter_'+project.id,
         x_accessor: 'date',
         y_accessor: 'value',

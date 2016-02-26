@@ -1,12 +1,11 @@
 <template name="Home">
 
-<p>Experimental Berkman Project Dashboard.</p>
+<h1>Berkman Project Dashboard</h1>
 
-<p>Here is a simple list of the projects it knows about.</p>
+<p style="text-align: center;">Just twitter followers at the moment. More stuff can be added.</p>
 
 {{ #each projects }}
-<div>{{id}}</div>
-<div id="twitter_{{id}}"></div>
+<div id="twitter_{{id}}" class="twitter_followers"></div>
 {{ /each }}
 
 </template>
