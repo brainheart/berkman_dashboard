@@ -1,17 +1,12 @@
 <template name="Home">
 
-<p>Hello world {{reinos}}</p>
+<p>Experimental Berkman Project Dashboard.</p>
 
-<p>Hello Reiny Heiny poo.</p>
+<p>Here is a simple list of the projects it knows about.</p>
 
 {{ #each projects }}
-{{id}}
+<div>{{id}}</div>
+<div id="twitter_{{id}}"></div>
 {{ /each }}
-
-{{ #each scores }}
-{{value}}
-{{ /each }}
-
-<div id="twitter"></div>
 
 </template>
